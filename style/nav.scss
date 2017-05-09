@@ -1,0 +1,96 @@
+@media screen and (min-width: 766px) {
+  .navbar {
+    padding: 30px 5% 0 5%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    background: transparent; 
+    border-radius: 0; 
+  }
+
+  .scrolled-nav {
+    background: #fcfcfc;
+    z-index: 2;
+    box-shadow: 0px 2px 2px #aaa;
+    padding: 0 5%;
+  }
+
+  .navbar.scrolled-nav ul a {
+    color: #222;
+  }
+
+  .navbar.scrolled-nav .navbar-brand i {
+    font-size: 30px;
+    margin-top: -5px;
+  }
+
+  .navbar li:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 3px;
+    background-color: #e6493a;
+    content: "";
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+  }
+
+  .navbar li:hover a {
+    background: inherit;
+    color: #e5493a;
+  }
+
+  .navbar li:hover:after {
+    width: 100%;
+  }
+
+  .navbar ul a {
+    -webkit-transition: color .3s ease;
+    -moz-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .navbar .navbar-brand i {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    font-size: 60px;
+    color: #444;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .navbar{
+    background: #fff;
+  }
+  
+  .navbar .navbar-toggle  span {
+    background: #000;
+  }
+
+  .navbar li:hover a {
+    background: inherit;
+    color: #e5493a;
+  }
+
+  .navbar ul a {
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  body {
+    padding-top:30px;
+  }
+}
